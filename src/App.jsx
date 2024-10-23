@@ -3,23 +3,20 @@ import "./App.css";
 import { recipes } from "./data.js";
 
 function SearchList({ updateRecipeList }) {
-  const handleOptionChange = (e) => updateRecipeList((previousRecipeList) =>
-    previousRecipeList.filter((recipe) => recipe.title === e.target.value)
-  );
+  const handleOptionChange = (e) =>
+    updateRecipeList((previousRecipeList) =>
+      previousRecipeList.filter((recipe) => recipe.title === e.target.value)
+    );
   return (
     <div className="header">
-      <p className="introduction">Welcome to the <span>World of Pizzas</span></p>
+      <p className="introduction">
+        Welcome to the <span>World of Pizzas</span>
+      </p>
       <select className="searchBar" onChange={handleOptionChange}>
-        <option value="">
-          {" "}
-          --Select--{" "}
-        </option>
+        <option value=""> --Select-- </option>
         {recipes.map((recipe) => {
           return (
-            <option
-              key={recipe.id}
-              value={recipe.title}
-            >
+            <option key={recipe.id} value={recipe.title}>
               {recipe.title}
             </option>
           );
