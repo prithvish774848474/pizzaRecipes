@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #28282b; /* Matte Black */
+}
+
+.header {
+    border-image-source: linear-gradient(
+        90deg, #28282b 0%, #c0c0c0 50%, #28282b 100%
+    );
+    border-image-slice: 1;
+}
+
+.introduction {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 0.5em darkblue;
+}
+
+.searchBar, .reset {
+    box-shadow: 0 0 0.25em #c0c0c0, 0 0 0.25em lightsteelblue;
+    font-family: cursive;
+}
+
+.recipe-card {
+    box-shadow: 0 0 0.25em #c0c0c0, 0 0 0.5em #ffd700;
+}
+
+.recipe-card:hover {
+    box-shadow: 0 0 0.25em #c0c0c0, 0 0 0.5em #90ee90;
+}
+
+.recipe-card-image {
+    transition-property: height;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+
+.recipe-card-redirect {
+    transition-property: transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    font-family: cursive;
+}
