@@ -1,7 +1,8 @@
-If you are a Pizza Lover, then this Application is the best for you! <br>
-Find you favorite Pizza Recipes here!
-
 # React + Vite
+
+If you are a Pizza Lover, then this Application is the best for you!
+Find you favorite Pizza Recipes here!
+You can view the application by clicking <https://prithvish774848474.github.io/pizzaRecipes/>
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
